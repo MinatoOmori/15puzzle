@@ -8,23 +8,43 @@ module alu(ina, inb, op, zf, out);
 
 always @(*) begin
 	case(op)
-//	AND: begin
-//		out = ina & inb;
+	AND: begin
+		out = ina & inb;
+		zf = 0;
+	end
+
+	OR: begin 
+		out = ina | inb;
+		zf = 0;
+	end
+	
+	XOR: begin
+		out = ina ^ inb;
+		zf = 0;
+	end
+
+	ADD: begin
+		out = ina + inb;
+		zf = 0;
+	end
+
+	SUB: begin
+		out = (ina > inb)? ina - inb : inb - ina;
+		zf = 0;
+	end
+
+//	MUL: begin
+//		out = ina * inb;
 //		zf = 0;
 //	end
-//
-//	OR: begin 
-//		out = ina | inb;
+	
+//	LSFT: begin
+//		out = ina << inb;
 //		zf = 0;
 //	end
-//	
-//	ADD: begin
-//		out = ina + inb;
-//		zf = 0;
-//	end
-//
-//	SUB: begin
-//		out = (ina + inb)? ina - inb : inb - ina;
+
+//	RSFT: begin
+//		out = ina >> inb;
 //		zf = 0;
 //	end
 

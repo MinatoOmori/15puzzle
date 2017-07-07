@@ -16,7 +16,82 @@ module decoder(op, zf, pc_in, pc_we, src0, src1, src2, dst, re_dst, reg_we, sel1
 always @(*) begin
 	case(op[22:18])
 //synopsys parallel_case full_case
-//	AND: begin
+	AND: begin
+		alu_op = op[22:18];
+		dst = op[17:12];
+		src2 = 0;
+		src1 = op[11:6];
+		src0 = op[5:0];
+		pc_in = 0;
+		pc_we = 0;
+		reg_we = 1;
+		sel1 = 0;
+		sel2 = 0;
+		data = 0;
+		mem_we = 0;
+	end
+
+	OR : begin
+		alu_op = op[22:18];
+		dst = op[17:12];
+		src2 = 0;
+		src1 = op[11:6];
+		src0 = op[5:0];
+		pc_in = 0;
+		pc_we = 0;
+		reg_we = 1;
+		sel1 = 0;
+		sel2 = 0;
+		data = 0;
+		mem_we = 0;
+	end
+
+	XOR : begin
+		alu_op = op[22:18];
+		dst = op[17:12];
+		src2 = 0;
+		src1 = op[11:6];
+		src0 = op[5:0];
+		pc_in = 0;
+		pc_we = 0;
+		reg_we = 1;
+		sel1 = 0;
+		sel2 = 0;
+		data = 0;
+		mem_we = 0;
+	end
+
+	ADD : begin
+		alu_op = op[22:18];
+		dst = op[17:12];
+		src2 = 0;
+		src1 = op[11:6];
+		src0 = op[5:0];
+		pc_in = 0;
+		pc_we = 0;
+		reg_we = 1;
+		sel1 = 0;
+		sel2 = 0;
+		data = 0;
+		mem_we = 0;
+	end
+
+	SUB : begin
+		alu_op = op[22:18];
+		dst = op[17:12];
+		src2 = 0;
+		src1 = op[11:6];
+		src0 = op[5:0];
+		pc_in = 0;
+		pc_we = 0;
+		reg_we = 1;
+		sel1 = 0;
+		sel2 = 0;
+		data = 0;
+		mem_we = 0;
+	end
+
+//	MUL : begin
 //		alu_op = op[22:18];
 //		dst = op[17:12];
 //		src2 = 0;
@@ -31,7 +106,22 @@ always @(*) begin
 //		mem_we = 0;
 //	end
 //
-//	OR : begin
+//	LSFT : begin
+//		alu_op = op[22:18];
+//		dst = op[17:12];
+//		src2 = 0;
+//		src1 = op[11:6];
+//		src0 = op[5:0];
+//		pc_in = 0;
+//		pc_we = 0;
+//		reg_we = 1;
+//		sel1 = 0;
+//		sel2 = 0;
+//		data = 0;
+//		mem_we = 0;
+//	end
+//
+//	RSFT : begin
 //		alu_op = op[22:18];
 //		dst = op[17:12];
 //		src2 = 0;
