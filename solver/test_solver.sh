@@ -12,10 +12,10 @@ do
   end=`date +%s%3N`
   `echo -e "$N\n$puzzle\n$answer" | $PYTHON replay_solution.py`
 
-  if [ $? -eq 1 ];
+  if [ $? -eq 0 ];
   then
-    echo "Failed to solve $puzzle. Solver answered $answer"
-  else
     echo "Solved $puzzle in $((end-start)) msec. Solver answered $answer"
+  else
+    echo "Failed to solve $puzzle. Solver answered $answer"
   fi
 done

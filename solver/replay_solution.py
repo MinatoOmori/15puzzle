@@ -3,6 +3,10 @@
 import sys
 
 
+def is_inside_board(n, y, x):
+    return 0 <= y < n and 0 <= x < n
+
+
 def apply_move(n, board, move):
     move_dict = {
         'U': (-1, 0),
@@ -11,15 +15,23 @@ def apply_move(n, board, move):
         'D': (1, 0)
     }
 
+    if move not in move_dict:
+        return False
+
     dy, dx = move_dict[move]
     empty_pos = board.index(0)
     y = empty_pos // n
     x = empty_pos % n
     ny = y + dy
     nx = x + dx
-    npos = ny * n + nx
 
+    if not is_inside_board(n, ny, nx):
+        return False
+
+    npos = ny * n + nx
     board[empty_pos], board[npos] = board[npos], board[empty_pos]
+
+    return True
 
 
 def main():
@@ -28,7 +40,9 @@ def main():
     moves = list(input().strip())
 
     for move in moves:
-        apply_move(n, board, move)
+        ok = apply_move(n, board, move)
+        if not ok:
+            sys.exit(1)
 
     if board != list(range(n * n)):
         sys.exit(1)
