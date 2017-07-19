@@ -23,9 +23,11 @@ python3 ../../script/change_memh_value.py \
   --memh ./build/solver_ida.memh \
   --map ./build/solver_ida.map \
   --kv k_initial_empty_y=$empty_y_on_mem \
-  k_initial_empty_x=$empty_y_on_mem \
+  k_initial_empty_x=$empty_x_on_mem \
   k_initial_board=$board_on_mem \
   > ./build/memory.memh
+
+echo "Start solving $board"
 
 cd build
 start=`date +%s`
