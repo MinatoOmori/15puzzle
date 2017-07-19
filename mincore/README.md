@@ -30,12 +30,14 @@ verilator にパスが通った状態でこのディレクトリで `make` す�
 
 ## コアのテスト
 (先にriscv-gnu-toolchain を使用するための設定を行なってください)
+
 `./test/test_op`で `make` することで，`./test/test_op/build/memory.memh` が作られます．
 `./test/test_op`で `make test` することで，コアのテストを行うことができます．
 
 
 ## ソルバーの実行
 (先にriscv-gnu-toolchain を使用するための設定を行なってください)
+
 `./test/test_8puzzle`で `make` することで，`./test/test_8puzzle/build/solver.memh` が作られます．
 `./test/test_8puzzle`で `make test` することで，ランダムなパズルを生成して初期盤面を埋め込んだ `memory.memh` 作成し，実行結果をチェックします．
 生成したパズルの難易度によって数秒から数時間を要します．
