@@ -1,0 +1,268 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a(div.o)
+                              build/print.o (__udivsi3)
+
+Discarded input sections
+
+ .debug_line    0x0000000000000000      0x191 /home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_info    0x0000000000000000       0xf0 /home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_abbrev  0x0000000000000000       0x14 /home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a(div.o)
+ .debug_aranges
+                0x0000000000000000       0x20 /home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a(div.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+mem              0x0000000000000000 0x000000000000c000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.memory         0x0000000000000000     0x8240
+                0x0000000000000000                . = 0x0
+ start*(.text)
+ *(.text)
+ .text          0x0000000000000000      0x1e4 build/start.o
+                0x0000000000000084                lui_ret
+                0x000000000000008c                auipc_ret
+                0x0000000000000094                jal_ret
+                0x000000000000009c                jalr_ret
+                0x00000000000000a4                beq_ret
+                0x00000000000000ac                bne_ret
+                0x00000000000000b4                blt_ret
+                0x00000000000000bc                bge_ret
+                0x00000000000000c4                bltu_ret
+                0x00000000000000cc                bgeu_ret
+                0x00000000000000d4                lb_ret
+                0x00000000000000dc                lh_ret
+                0x00000000000000e4                lw_ret
+                0x00000000000000ec                lbu_ret
+                0x00000000000000f4                lhu_ret
+                0x00000000000000fc                sb_ret
+                0x0000000000000104                sh_ret
+                0x000000000000010c                sw_ret
+                0x0000000000000114                addi_ret
+                0x000000000000011c                slti_ret
+                0x0000000000000124                xori_ret
+                0x000000000000012c                ori_ret
+                0x0000000000000134                andi_ret
+                0x000000000000013c                slli_ret
+                0x0000000000000144                srli_ret
+                0x000000000000014c                srai_ret
+                0x0000000000000154                add_ret
+                0x000000000000015c                sub_ret
+                0x0000000000000164                sll_ret
+                0x000000000000016c                slt_ret
+                0x0000000000000174                xor_ret
+                0x000000000000017c                srl_ret
+                0x0000000000000184                sra_ret
+                0x000000000000018c                or_ret
+                0x0000000000000194                and_ret
+ .text          0x00000000000001e4       0xe0 build/print.o
+                0x00000000000001e4                print_chr
+                0x00000000000001f0                print_str
+                0x000000000000020c                print_dec
+                0x000000000000028c                print_hex
+ .text          0x00000000000002c4      0x30c build/addi.o
+                0x00000000000002c4                addi
+ .text          0x00000000000005d0      0x560 build/add.o
+                0x00000000000005d0                add
+ .text          0x0000000000000b30      0x244 build/andi.o
+                0x0000000000000b30                andi
+ .text          0x0000000000000d74      0x538 build/and.o
+                0x0000000000000d74                and
+ *fill*         0x00000000000012ac        0x4 
+ .text          0x00000000000012b0       0xcc build/auipc.o
+                0x00000000000012b0                auipc
+ .text          0x000000000000137c      0x340 build/beq.o
+                0x000000000000137c                beq
+ .text          0x00000000000016bc      0x3a0 build/bge.o
+                0x00000000000016bc                bge
+ .text          0x0000000000001a5c      0x3d8 build/bgeu.o
+                0x0000000000001a5c                bgeu
+ .text          0x0000000000001e34      0x340 build/blt.o
+                0x0000000000001e34                blt
+ .text          0x0000000000002174      0x378 build/bltu.o
+                0x0000000000002174                bltu
+ .text          0x00000000000024ec      0x344 build/bne.o
+                0x00000000000024ec                bne
+ .text          0x0000000000002830      0x184 build/jalr.o
+                0x0000000000002830                jalr
+ .text          0x00000000000029b4       0xd8 build/jal.o
+                0x00000000000029b4                jal
+ .text          0x0000000000002a8c      0x2cc build/lb.o
+                0x0000000000002a8c                lb
+ .text          0x0000000000002d58      0x2cc build/lbu.o
+                0x0000000000002d58                lbu
+ .text          0x0000000000003024      0x2ec build/lh.o
+                0x0000000000003024                lh
+ .text          0x0000000000003310      0x300 build/lhu.o
+                0x0000000000003310                lhu
+ .text          0x0000000000003610       0xe0 build/lui.o
+                0x0000000000003610                lui
+ .text          0x00000000000036f0      0x30c build/lw.o
+                0x00000000000036f0                lw
+ .text          0x00000000000039fc      0x25c build/ori.o
+                0x00000000000039fc                ori
+ .text          0x0000000000003c58      0x544 build/or.o
+                0x0000000000003c58                or
+ .text          0x000000000000419c      0x474 build/sb.o
+                0x000000000000419c                sb
+ .text          0x0000000000004610      0x4f8 build/sh.o
+                0x0000000000004610                sh
+ .text          0x0000000000004b08      0x308 build/slli.o
+                0x0000000000004b08                slli
+ .text          0x0000000000004e10      0x5ec build/sll.o
+                0x0000000000004e10                sll
+ .text          0x00000000000053fc      0x2f8 build/slti.o
+                0x00000000000053fc                slti
+ .text          0x00000000000056f4      0x548 build/slt.o
+                0x00000000000056f4                slt
+ .text          0x0000000000005c3c      0x33c build/srai.o
+                0x0000000000005c3c                srai
+ .text          0x0000000000005f78      0x61c build/sra.o
+                0x0000000000005f78                sra
+ .text          0x0000000000006594      0x338 build/srli.o
+                0x0000000000006594                srli
+ .text          0x00000000000068cc      0x63c build/srl.o
+                0x00000000000068cc                srl
+ .text          0x0000000000006f08      0x540 build/sub.o
+                0x0000000000006f08                sub
+ .text          0x0000000000007448      0x504 build/sw.o
+                0x0000000000007448                sw
+ .text          0x000000000000794c      0x268 build/xori.o
+                0x000000000000794c                xori
+ .text          0x0000000000007bb4      0x540 build/xor.o
+                0x0000000000007bb4                xor
+ .text          0x00000000000080f4       0xb4 /home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a(div.o)
+                0x00000000000080f4                __divsi3
+                0x00000000000080fc                __udivsi3
+                0x0000000000008144                __umodsi3
+                0x0000000000008178                __modsi3
+ *(*)
+ .data          0x00000000000081a8        0x0 build/start.o
+ .bss           0x00000000000081a8        0x0 build/start.o
+ .rela.text     0x00000000000081a8        0x0 build/start.o
+ .data          0x00000000000081a8        0x0 build/print.o
+ .bss           0x00000000000081a8        0x0 build/print.o
+ .rodata.str1.4
+                0x00000000000081a8       0x14 build/print.o
+                                         0x11 (size before relaxing)
+ .comment       0x00000000000081bc       0x11 build/print.o
+                                         0x12 (size before relaxing)
+ *fill*         0x00000000000081cd        0x3 
+ .data          0x00000000000081d0        0x0 build/addi.o
+ .bss           0x00000000000081d0        0x0 build/addi.o
+ .data          0x00000000000081d0        0x0 build/add.o
+ .bss           0x00000000000081d0        0x0 build/add.o
+ .data          0x00000000000081d0        0x0 build/andi.o
+ .bss           0x00000000000081d0        0x0 build/andi.o
+ .data          0x00000000000081d0        0x0 build/and.o
+ .bss           0x00000000000081d0        0x0 build/and.o
+ .data          0x00000000000081d0        0x0 build/auipc.o
+ .bss           0x00000000000081d0        0x0 build/auipc.o
+ .data          0x00000000000081d0        0x0 build/beq.o
+ .bss           0x00000000000081d0        0x0 build/beq.o
+ .data          0x00000000000081d0        0x0 build/bge.o
+ .bss           0x00000000000081d0        0x0 build/bge.o
+ .data          0x00000000000081d0        0x0 build/bgeu.o
+ .bss           0x00000000000081d0        0x0 build/bgeu.o
+ .data          0x00000000000081d0        0x0 build/blt.o
+ .bss           0x00000000000081d0        0x0 build/blt.o
+ .data          0x00000000000081d0        0x0 build/bltu.o
+ .bss           0x00000000000081d0        0x0 build/bltu.o
+ .data          0x00000000000081d0        0x0 build/bne.o
+ .bss           0x00000000000081d0        0x0 build/bne.o
+ .data          0x00000000000081d0        0x0 build/jalr.o
+ .bss           0x00000000000081d0        0x0 build/jalr.o
+ .data          0x00000000000081d0        0x0 build/jal.o
+ .bss           0x00000000000081d0        0x0 build/jal.o
+ .data          0x00000000000081d0        0x4 build/lb.o
+ .bss           0x00000000000081d4        0x0 build/lb.o
+ .data          0x00000000000081d4        0x4 build/lbu.o
+ .bss           0x00000000000081d8        0x0 build/lbu.o
+ .data          0x00000000000081d8        0x8 build/lh.o
+ .bss           0x00000000000081e0        0x0 build/lh.o
+ .data          0x00000000000081e0        0x8 build/lhu.o
+ .bss           0x00000000000081e8        0x0 build/lhu.o
+ .data          0x00000000000081e8        0x0 build/lui.o
+ .bss           0x00000000000081e8        0x0 build/lui.o
+ .data          0x00000000000081e8       0x10 build/lw.o
+ .bss           0x00000000000081f8        0x0 build/lw.o
+ .data          0x00000000000081f8        0x0 build/ori.o
+ .bss           0x00000000000081f8        0x0 build/ori.o
+ .data          0x00000000000081f8        0x0 build/or.o
+ .bss           0x00000000000081f8        0x0 build/or.o
+ .data          0x00000000000081f8        0xa build/sb.o
+ .bss           0x0000000000008202        0x0 build/sb.o
+ *fill*         0x0000000000008202        0x2 
+ .data          0x0000000000008204       0x14 build/sh.o
+ .bss           0x0000000000008218        0x0 build/sh.o
+ .data          0x0000000000008218        0x0 build/slli.o
+ .bss           0x0000000000008218        0x0 build/slli.o
+ .data          0x0000000000008218        0x0 build/sll.o
+ .bss           0x0000000000008218        0x0 build/sll.o
+ .data          0x0000000000008218        0x0 build/slti.o
+ .bss           0x0000000000008218        0x0 build/slti.o
+ .data          0x0000000000008218        0x0 build/slt.o
+ .bss           0x0000000000008218        0x0 build/slt.o
+ .data          0x0000000000008218        0x0 build/srai.o
+ .bss           0x0000000000008218        0x0 build/srai.o
+ .data          0x0000000000008218        0x0 build/sra.o
+ .bss           0x0000000000008218        0x0 build/sra.o
+ .data          0x0000000000008218        0x0 build/srli.o
+ .bss           0x0000000000008218        0x0 build/srli.o
+ .data          0x0000000000008218        0x0 build/srl.o
+ .bss           0x0000000000008218        0x0 build/srl.o
+ .data          0x0000000000008218        0x0 build/sub.o
+ .bss           0x0000000000008218        0x0 build/sub.o
+ .data          0x0000000000008218       0x28 build/sw.o
+ .bss           0x0000000000008240        0x0 build/sw.o
+ .data          0x0000000000008240        0x0 build/xori.o
+ .bss           0x0000000000008240        0x0 build/xori.o
+ .data          0x0000000000008240        0x0 build/xor.o
+ .bss           0x0000000000008240        0x0 build/xor.o
+ .data          0x0000000000008240        0x0 /home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a(div.o)
+ .bss           0x0000000000008240        0x0 /home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a(div.o)
+                0x0000000000008240                end = .
+LOAD build/start.o
+LOAD build/print.o
+LOAD build/addi.o
+LOAD build/add.o
+LOAD build/andi.o
+LOAD build/and.o
+LOAD build/auipc.o
+LOAD build/beq.o
+LOAD build/bge.o
+LOAD build/bgeu.o
+LOAD build/blt.o
+LOAD build/bltu.o
+LOAD build/bne.o
+LOAD build/jalr.o
+LOAD build/jal.o
+LOAD build/lb.o
+LOAD build/lbu.o
+LOAD build/lh.o
+LOAD build/lhu.o
+LOAD build/lui.o
+LOAD build/lw.o
+LOAD build/ori.o
+LOAD build/or.o
+LOAD build/sb.o
+LOAD build/sh.o
+LOAD build/slli.o
+LOAD build/sll.o
+LOAD build/slti.o
+LOAD build/slt.o
+LOAD build/srai.o
+LOAD build/sra.o
+LOAD build/srli.o
+LOAD build/srl.o
+LOAD build/sub.o
+LOAD build/sw.o
+LOAD build/xori.o
+LOAD build/xor.o
+LOAD /home/osuka/code/riscv-gnu-toolchain-rv32i/buildi/bin/../lib/gcc/riscv32-unknown-elf/7.1.0/rv32i/ilp32/libgcc.a
+OUTPUT(build/firmware elf32-littleriscv)
